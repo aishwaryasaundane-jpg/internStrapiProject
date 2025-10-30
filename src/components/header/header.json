@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "menus": {
+      "type": "component",
+      "component": "header.menus",
+      "repeatable": true
+    },
+    "cta_button": {
+      "type": "component",
+      "component": "header.cta-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

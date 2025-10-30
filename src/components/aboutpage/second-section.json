@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_aboutpage_second_sections",
+  "info": {
+    "displayName": "second_section"
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "string"
+    },
+    "second_cards": {
+      "type": "component",
+      "component": "aboutpage.second-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

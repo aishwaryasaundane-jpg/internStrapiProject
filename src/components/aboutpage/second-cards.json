@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_aboutpage_second_cards",
+  "info": {
+    "displayName": "second_cards"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

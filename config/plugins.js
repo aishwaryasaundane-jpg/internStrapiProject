@@ -1,1 +1,9 @@
-module.exports = () => ({});
+module.exports = ({ env }) => ({
+
+  seo: {
+    enabled: true,
+  },
+  // ...
+
+});
+

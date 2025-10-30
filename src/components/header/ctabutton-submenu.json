@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_header_ctabutton_submenus",
+  "info": {
+    "displayName": "ctabutton_submenu"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

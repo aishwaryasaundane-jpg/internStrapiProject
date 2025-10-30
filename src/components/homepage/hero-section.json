@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_homepage_hero_sections",
+  "info": {
+    "displayName": "hero_section"
+  },
+  "options": {},
+  "attributes": {
+    "banner_image_desktop": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mobile_image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

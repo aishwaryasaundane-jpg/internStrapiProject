@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_global_faq_sections",
+  "info": {
+    "displayName": "faq-section"
+  },
+  "options": {},
+  "attributes": {
+    "que_title": {
+      "type": "string"
+    },
+    "ans_description": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "default"
+      }
+    }
+  },
+  "config": {}
+}

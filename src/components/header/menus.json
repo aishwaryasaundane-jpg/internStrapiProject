@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_menus",
+  "info": {
+    "displayName": "menus"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "redirect_link": {
+      "type": "string"
+    },
+    "inner_submenu": {
+      "type": "component",
+      "component": "header.submenu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

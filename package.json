@@ -15,16 +15,18 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^4.0.4",
     "@strapi/plugin-cloud": "5.26.0",
+    "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.26.0",
-    "@strapi/strapi": "5.26.0",
+    "@strapi/strapi": "^5.26.0",
+    "file-type": "^16.5.4",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
@@ -32,5 +34,9 @@
   "strapi": {
     "uuid": "7a33ceec-7b9a-4cf5-bd32-6cfbec70c8b5",
     "installId": "435f489a5de89f3e31019c979242a3043a29514b6fafd6f0faff18b69b95e672"
+  },
+  "devDependencies": {
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_testimonial_sections",
+  "info": {
+    "displayName": "testimonial_section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "button_title": {
+      "type": "string"
+    },
+    "button_url": {
+      "type": "string"
+    },
+    "testimonials_cards": {
+      "type": "component",
+      "component": "homepage.testimonials-section",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

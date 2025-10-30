@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "Templates": {
+      "type": "dynamiczone",
+      "components": [
+        "homepage.home-page-layout",
+        "aboutpage.about-page-layout",
+        "contactpage.contact-page-layout"
+      ]
+    }
+  }
+}

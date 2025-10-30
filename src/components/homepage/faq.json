@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_faqs",
+  "info": {
+    "displayName": "faq"
+  },
+  "options": {},
+  "attributes": {
+    "faq_title": {
+      "type": "string"
+    },
+    "faq_section": {
+      "type": "component",
+      "component": "global.faq-section",
+      "repeatable": true
+    },
+    "button_title": {
+      "type": "string"
+    },
+    "button_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

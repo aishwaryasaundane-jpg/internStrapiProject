@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_aboutpage_about_page_layouts",
+  "info": {
+    "displayName": "about_page_layout"
+  },
+  "options": {},
+  "attributes": {
+    "first_section": {
+      "type": "component",
+      "component": "aboutpage.first-section",
+      "repeatable": false
+    },
+    "second_section": {
+      "type": "component",
+      "component": "aboutpage.second-section",
+      "repeatable": false
+    },
+    "third_section": {
+      "type": "component",
+      "component": "aboutpage.third-section",
+      "repeatable": true
+    },
+    "product": {
+      "type": "component",
+      "component": "homepage.product",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

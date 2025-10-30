@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_aboutpage_third_sections",
+  "info": {
+    "displayName": "third_section"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

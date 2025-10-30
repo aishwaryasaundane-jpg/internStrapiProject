@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_homepage_home_page_layouts",
+  "info": {
+    "displayName": "home_page_layout"
+  },
+  "options": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "homepage.hero-section",
+      "repeatable": false
+    },
+    "why_tedibar_section": {
+      "type": "component",
+      "component": "homepage.why-tedibar-section",
+      "repeatable": false
+    },
+    "product": {
+      "type": "component",
+      "component": "homepage.product",
+      "repeatable": false
+    },
+    "testimonials_section": {
+      "type": "component",
+      "component": "homepage.testimonial-section",
+      "repeatable": false
+    },
+    "blog_post_section": {
+      "type": "component",
+      "component": "homepage.blog-post-section",
+      "repeatable": false
+    },
+    "faq": {
+      "type": "component",
+      "component": "homepage.faq",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

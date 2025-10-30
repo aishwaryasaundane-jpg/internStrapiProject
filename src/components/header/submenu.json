@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_header_submenus",
+  "info": {
+    "displayName": "submenu"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "redirect_link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

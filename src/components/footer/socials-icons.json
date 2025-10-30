@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_footer_socials_icons",
+  "info": {
+    "displayName": "socials_icons"
+  },
+  "options": {},
+  "attributes": {
+    "socials_title": {
+      "type": "string"
+    },
+    "icons_url": {
+      "type": "string"
+    },
+    "logo_icons": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_homepage_testimonials_sections",
+  "info": {
+    "displayName": "testimonials_cards"
+  },
+  "options": {},
+  "attributes": {
+    "ratings": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

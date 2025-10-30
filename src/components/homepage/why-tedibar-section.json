@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_homepage_why_tedibar_sections",
+  "info": {
+    "displayName": "why_tedibar_section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "desktop_image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mobile_image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_points": {
+      "type": "component",
+      "component": "homepage.feature-points",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

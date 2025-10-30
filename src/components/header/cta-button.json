@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_header_cta_buttons",
+  "info": {
+    "displayName": "cta_button"
+  },
+  "options": {},
+  "attributes": {
+    "cta_text": {
+      "type": "string"
+    },
+    "button_submenu": {
+      "type": "component",
+      "component": "header.ctabutton-submenu",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

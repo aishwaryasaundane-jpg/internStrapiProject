@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_contactpage_contact_page_layouts",
+  "info": {
+    "displayName": "contact_page_layout"
+  },
+  "options": {},
+  "attributes": {
+    "contact_left_section": {
+      "type": "component",
+      "component": "contactpage.contact-left-section",
+      "repeatable": false
+    },
+    "contact_social_icons": {
+      "type": "component",
+      "component": "contactpage.contact-social-icons",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_footer_footer_0s",
+  "info": {
+    "displayName": "footer_0"
+  },
+  "options": {},
+  "attributes": {
+    "footer_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "socials_icons": {
+      "type": "component",
+      "component": "footer.socials-icons",
+      "repeatable": true
+    },
+    "footer_menu": {
+      "type": "component",
+      "component": "footer.footer-menu",
+      "repeatable": true
+    },
+    "copyrights_text": {
+      "type": "string"
+    },
+    "footer_column": {
+      "type": "component",
+      "component": "footer.footer-column",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

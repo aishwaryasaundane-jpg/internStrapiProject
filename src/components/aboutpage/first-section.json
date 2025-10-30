@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_aboutpage_first_sections",
+  "info": {
+    "displayName": "first_section"
+  },
+  "options": {},
+  "attributes": {
+    "about_title": {
+      "type": "string"
+    },
+    "banner_image_desktop": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image_mobile": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

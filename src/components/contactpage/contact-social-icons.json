@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_contactpage_contact_social_icons",
+  "info": {
+    "displayName": "contact_social_icons"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo_link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

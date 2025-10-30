@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_and_footers",
+  "info": {
+    "singularName": "header-and-footer",
+    "pluralName": "header-and-footers",
+    "displayName": "Header&Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header_section": {
+      "type": "component",
+      "component": "header.header",
+      "repeatable": false
+    },
+    "footer_section": {
+      "type": "component",
+      "component": "footer.footer-0",
+      "repeatable": false
+    }
+  }
+}

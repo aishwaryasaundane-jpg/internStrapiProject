@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_homepage_feature_points",
+  "info": {
+    "displayName": "feature_points"
+  },
+  "options": {},
+  "attributes": {
+    "icons": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "icons_title": {
+      "type": "string"
+    },
+    "icons_description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
