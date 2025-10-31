@@ -441,13 +441,8 @@ export interface ApiBlogListingBlogListing extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    blogs: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'>;
     button_text: Schema.Attribute.String;
     button_url: Schema.Attribute.String;
-    catgeories: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::catgeory.catgeory'
-    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

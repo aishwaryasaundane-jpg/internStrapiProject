@@ -2,11 +2,12 @@ module.exports = {
   routes: [
     {
       method: 'GET',
-      path: '/blog/list',
-      handler: 'api::blog.blog.list',
-       config: {
-        auth: false,
+      path: '/blogs/by-category/:categoryName',
+      handler: 'blog.byCategory',
+      config: {
+        auth: false, 
       },
     },
+    
   ],
 };
