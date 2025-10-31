@@ -199,26 +199,6 @@ export interface GlobalFaqSection extends Struct.ComponentSchema {
   };
 }
 
-export interface GlobalProductSection extends Struct.ComponentSchema {
-  collectionName: 'components_global_product_sections';
-  info: {
-    displayName: 'product_cards';
-  };
-  attributes: {
-    button_text: Schema.Attribute.String;
-    button_url: Schema.Attribute.String;
-    mobile_image: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    product_image_desktop: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    text: Schema.Attribute.String;
-  };
-}
-
 export interface GlobalSocialicons extends Struct.ComponentSchema {
   collectionName: 'components_global_socialicons';
   info: {
@@ -509,7 +489,6 @@ declare module '@strapi/strapi' {
       'footer.socials-icons': FooterSocialsIcons;
       'global.content': GlobalContent;
       'global.faq-section': GlobalFaqSection;
-      'global.product-section': GlobalProductSection;
       'global.socialicons': GlobalSocialicons;
       'header.cta-button': HeaderCtaButton;
       'header.ctabutton-submenu': HeaderCtabuttonSubmenu;

@@ -54,6 +54,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::catgeory.catgeory"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
     }
   }
 }

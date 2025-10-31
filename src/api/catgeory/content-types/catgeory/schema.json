@@ -14,7 +14,7 @@
     "title": {
       "type": "string"
     },
-    "sulg": {
+    "slug": {
       "type": "uid",
       "targetField": "title"
     }

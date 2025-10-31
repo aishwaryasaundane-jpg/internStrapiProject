@@ -441,6 +441,7 @@ export interface ApiBlogListingBlogListing extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    blogs: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'>;
     button_text: Schema.Attribute.String;
     button_url: Schema.Attribute.String;
     catgeories: Schema.Attribute.Relation<
@@ -540,7 +541,7 @@ export interface ApiCatgeoryCatgeory extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    sulg: Schema.Attribute.UID<'title'>;
+    slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
