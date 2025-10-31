@@ -14,7 +14,7 @@ module.exports = {
       path: '/blogs/search',
       handler: 'blog.search',
       config: {
-        auth: false, // set true if you want it protected
+        auth: false, 
       },
     },
   ],
