@@ -385,9 +385,9 @@ export interface HomepageProduct extends Struct.ComponentSchema {
     displayName: 'product';
   };
   attributes: {
-    product_cards: Schema.Attribute.Component<'global.product-section', true>;
     product_description: Schema.Attribute.Blocks;
     product_title: Schema.Attribute.String;
+    products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
   };
 }
 

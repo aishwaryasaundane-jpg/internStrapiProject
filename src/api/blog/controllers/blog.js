@@ -14,7 +14,7 @@ module.exports = createCoreController('api::blog.blog', ({ strapi }) => ({
       const filters = {};
 
       if (category) {
-        filters.blog_categories = { title: { $eq: category } };
+        filters.catgeories = { title: { $eq: category } };
       }
 
       if (search) {
@@ -27,7 +27,7 @@ module.exports = createCoreController('api::blog.blog', ({ strapi }) => ({
       const blogs = await strapi.db.query('api::blog.blog').findMany({
         where: filters,
         populate: {
-          blog_categories: true,
+          catgeories: true,
           image: true,
           image_mobile: true,
           socialIcons: true,

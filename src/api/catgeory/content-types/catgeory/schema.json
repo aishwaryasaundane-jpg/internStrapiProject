@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blog_categories",
+  "collectionName": "catgeories",
   "info": {
-    "singularName": "blog-categorie",
-    "pluralName": "blog-categories",
-    "displayName": "blog_categorie"
+    "singularName": "catgeory",
+    "pluralName": "catgeories",
+    "displayName": "catgeory"
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +14,7 @@
     "title": {
       "type": "string"
     },
-    "slug": {
+    "sulg": {
       "type": "uid",
       "targetField": "title"
     }

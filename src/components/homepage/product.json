@@ -11,10 +11,10 @@
     "product_description": {
       "type": "blocks"
     },
-    "product_cards": {
-      "type": "component",
-      "component": "global.product-section",
-      "repeatable": true
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   },
   "config": {}

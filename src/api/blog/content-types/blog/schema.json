@@ -54,16 +54,16 @@
       "component": "global.socialicons",
       "repeatable": true
     },
-    "blog_categories": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::blog-categorie.blog-categorie"
-    },
     "content": {
       "type": "blocks"
     },
     "summary": {
       "type": "string"
+    },
+    "catgeories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::catgeory.catgeory"
     }
   }
 }

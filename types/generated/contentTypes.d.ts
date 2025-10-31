@@ -430,36 +430,6 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiBlogCategorieBlogCategorie
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'blog_categories';
-  info: {
-    displayName: 'blog_categorie';
-    pluralName: 'blog-categories';
-    singularName: 'blog-categorie';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::blog-categorie.blog-categorie'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.UID<'title'>;
-    title: Schema.Attribute.String;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiBlogListingBlogListing extends Struct.CollectionTypeSchema {
   collectionName: 'blog_listings';
   info: {
@@ -471,9 +441,12 @@ export interface ApiBlogListingBlogListing extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    blogs: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'>;
     button_text: Schema.Attribute.String;
     button_url: Schema.Attribute.String;
+    catgeories: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::catgeory.catgeory'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -493,6 +466,7 @@ export interface ApiBlogListingBlogListing extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    section_title: Schema.Attribute.String;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -514,9 +488,9 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   attributes: {
     _content_hash: Schema.Attribute.String & Schema.Attribute.Private;
     author_name: Schema.Attribute.String;
-    blog_categories: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::blog-categorie.blog-categorie'
+    catgeories: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::catgeory.catgeory'
     >;
     content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
@@ -538,6 +512,35 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'title'>;
     socialIcons: Schema.Attribute.Component<'global.socialicons', true>;
     summary: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCatgeoryCatgeory extends Struct.CollectionTypeSchema {
+  collectionName: 'catgeories';
+  info: {
+    displayName: 'catgeory';
+    pluralName: 'catgeories';
+    singularName: 'catgeory';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::catgeory.catgeory'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sulg: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -634,6 +637,40 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
       ]
     >;
     title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiProductProduct extends Struct.CollectionTypeSchema {
+  collectionName: 'products';
+  info: {
+    displayName: 'product';
+    pluralName: 'products';
+    singularName: 'product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    button_url: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product.product'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1150,12 +1187,13 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::blog-categorie.blog-categorie': ApiBlogCategorieBlogCategorie;
       'api::blog-listing.blog-listing': ApiBlogListingBlogListing;
       'api::blog.blog': ApiBlogBlog;
+      'api::catgeory.catgeory': ApiCatgeoryCatgeory;
       'api::contact-form-submission.contact-form-submission': ApiContactFormSubmissionContactFormSubmission;
       'api::header-and-footer.header-and-footer': ApiHeaderAndFooterHeaderAndFooter;
       'api::page.page': ApiPagePage;
+      'api::product.product': ApiProductProduct;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
