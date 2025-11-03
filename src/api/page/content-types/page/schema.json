@@ -18,6 +18,11 @@
       "type": "uid",
       "targetField": "title"
     },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
     "Templates": {
       "type": "dynamiczone",
       "components": [

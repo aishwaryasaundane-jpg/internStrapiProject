@@ -482,7 +482,6 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    _content_hash: Schema.Attribute.String & Schema.Attribute.Private;
     author_name: Schema.Attribute.String;
     catgeories: Schema.Attribute.Relation<
       'oneToMany',
@@ -624,6 +623,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     Templates: Schema.Attribute.DynamicZone<
       [
